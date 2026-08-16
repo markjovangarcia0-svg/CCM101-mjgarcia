@@ -22,5 +22,7 @@ Mem:           1.9Gi       447Mi       797Mi       1.1Mi       827Mi       1.4G
 ## Available Disk Space
 
 /dev/vda1        19G  5.4G   13G  30% /tmpfs
+
 /dev/vda16      881M  117M  703M  15% /boot
+
 /dev/vda15      105M  6.2M   99M   6% /boot/efi

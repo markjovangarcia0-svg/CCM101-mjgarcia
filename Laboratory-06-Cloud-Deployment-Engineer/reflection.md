@@ -1,0 +1,11 @@
+# Mission 6 Reflection
+
+Writing a `docker-compose.yml` file makes a cloud engineer's job easier because all the settings for the application are placed in one configuration file. Instead of typing several Docker commands every time, the engineer can use one command to start the services. The configuration can also be saved in GitHub, reviewed, and reused when deploying the same application again. This makes the deployment more organized and reduces the chance of forgetting an important setting.
+
+YAML indentation is important because it shows the relationship between the different parts of the configuration. If I use a tab instead of spaces or place a line at the wrong indentation level, Docker Compose may report an error or interpret the configuration incorrectly. This can prevent the application from starting. Checking the spacing and validating the configuration before deployment can help avoid these problems.
+
+Environment variables such as `MYSQL_PASSWORD`, `MYSQL_DATABASE`, and `MYSQL_USER` allow the containers to use the required database settings. They help keep the configuration organized and make it easier to change settings without rewriting the whole deployment. However, passwords must be protected in real projects. The sample credentials in this laboratory are for practice and should not be used in production.
+
+Deploying Nextcloud with MariaDB helped me understand how different containers can work together as one application. The Nextcloud container provides the web interface, while MariaDB handles database storage. Using Docker Compose makes it easier to start and stop both services as a single stack. Accessing the setup page through port 8080 also helped me understand how a containerized application can be reached through a browser.
+
+Since Mission 1, my understanding of cloud computing has developed from learning basic concepts to practicing how applications can be deployed and managed. I learned that cloud engineering is not only about running a server but also about planning the architecture, configuring services, checking whether they work, and documenting the process. This activity also showed me how Infrastructure as Code can make deployment more consistent and manageable.

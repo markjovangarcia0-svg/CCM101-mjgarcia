@@ -1,10 +1,3 @@
-## CloudNova Database Backup Script
-
-This Bash script automates MariaDB database backups using Docker Compose. It compresses backups into `.sql.gz` files, verifies the backup file, and deletes backups older than 7 days.
-
-### Backup Script
-
-```bash
 #!/usr/bin/env bash
 # CloudNova operations: database backup with retention.
 set -Eeuo pipefail
@@ -37,13 +30,3 @@ cd "$PROJECT_DIR"
   echo "Backup successful: $OUT"
   echo "[$(date --iso-8601=seconds)] Backup finished"
 } >> "$LOG_FILE" 2>&1
-```
-
-### Features
-
-- **Automated backup:** Exports the MariaDB database.
-- **Compression:** Saves backups as `.sql.gz` files.
-- **Validation:** Checks that the backup file is not empty and verifies its gzip integrity.
-- **Retention policy:** Deletes backup files older than 7 days.
-- **Logging:** Records backup activity and errors in `/var/log/cloudnova-backup.log`.
-- **Security:** Uses restrictive file permissions through `umask 077`.

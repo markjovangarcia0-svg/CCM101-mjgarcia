@@ -1,4 +1,4 @@
-                                  **Final Reflection - Laboratory 10: The Enterprise Cloud Architect**
+**Final Reflection - Laboratory 10: The Enterprise Cloud Architect**
 
 Throughout Missions 1 to 10 in our Cloud Computing laboratory activities, I gained valuable knowledge and practical experience that helped me better understand how cloud technologies work. At first, I was only familiar with some basic concepts of cloud computing, but as I continued completing each mission, I gradually developed my skills in using Linux commands, managing servers, working with networks, and understanding different cloud services. Each activity introduced new challenges that helped me become more confident in using cloud computing tools and technologies.
 
